@@ -1,0 +1,34 @@
+SHAPE — MISE À JOUR WEEJUR V3
+
+IMPORTANT : AUCUN EFFACEMENT DE DONNÉES n'est demandé.
+
+AVANT LA MISE À JOUR :
+1. Ouvre Shape sur ton iPhone, sur l'adresse actuelle.
+2. Dans « Plus », exporte un JSON et conserve-le dans Fichiers (idéalement iCloud Drive).
+3. Garde une copie de l'ancienne version du site.
+
+OPTION RECOMMANDÉE — METTRE À JOUR LE SITE WEEJUR EXISTANT :
+1. Connecte-toi à Weejur depuis ton PC.
+2. Sélectionne TON SITE EXISTANT (et non « créer un nouveau site »).
+3. Utilise « Update » / « Upload files » (libellés susceptibles de varier).
+4. Dépose tous les fichiers de CE DOSSIER À LA RACINE du site : index.html, manifest.webmanifest, sw.js, icônes.
+5. Publie et recharge le site dans Safari sur le MÊME DOMAINE HTTPS.
+6. Vérifie qu'une ancienne pesée / recette est toujours visible.
+
+SI WEEJUR N'ACCEPTE QUE LE COLLAGE HTML :
+- Utilise Shape-Weejur-V3-Copier-Coller.html, fourni à côté du ZIP.
+- Ouvre-le comme texte, copie tout, colle dans l'éditeur HTML de ton SITE EXISTANT puis publie.
+- Le collage seul fonctionne mais ne fournit pas tous les fichiers de mode hors ligne.
+
+CONSERVATION DES DONNÉES :
+- IndexedDB : même base shape_db, même object store state, clé main.
+- Ne supprime aucune donnée dans Safari.
+- Une nouvelle adresse/domaine = stockage local distinct : il faut alors importer la sauvegarde JSON.
+- Les données ne sont PAS stockées sur Weejur ni synchronisées entre appareils.
+- Les changements de design ne doivent pas supprimer ou renommer la base IndexedDB.
+
+REMARQUES :
+- Les pas nécessitent toujours l'import via raccourci iOS ou saisie manuelle.
+- La dépense calorique reste une estimation entrée manuellement.
+- Open Food Facts nécessite une connexion Internet.
+- Le mode PWA fonctionne après publication HTTPS avec tous les fichiers.
